@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: #999;  
+        padding: 20px 40px; 
+      }
+
+      .tabs {
+        position: relative;   
+        min-height: 80%; /* This part sucks */
+        clear: both;
+        margin: 35px 0 25px;
+        background: white;
+      }
+      .tab {
+        float: left;
+        
+      }
+      .tab label {
+        background: #eee; 
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        margin-left: -1px; 
+        position: relative;
+        left: 1px; 
+        top: -29px;
+        -webkit-transition: background-color .17s linear;
+      }
+      .tab [type=radio] {
+        display: none;   
+      }
+      .content {
+        position: absolute;
+        top: -1px;
+        left: 0;
+        background: white;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        border: 1px solid #ccc; 
+        -webkit-transition: opacity .6s linear;
+        opacity: 0;
+      }
+      .content > div {
+        position: relative;
+        height: 90%;
+        overflow: auto;
+      }
+      [type=radio]:checked ~ label {
+        background: white;
+        border-bottom: 1px solid white;
+        z-index: 2;
+      }
+      [type=radio]:checked ~ label ~ .content {
+        z-index: 1;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabs">
+        
+      <div class="tab">
+          <input type="radio" id="tab-1" name="tab-group-1" checked>
+          <label for="tab-1">Course Information</label>
+          
+          <div class="content">
+            <div>
+              <h2>Course Information</h2>
+              
+              <h3>Instructor</h3>
+
+              <p>
+                Dr. A. David Trubatch
+                <br/> Message through 
+                <a href="http://montclair.instructure.com" target="_blank">
+                  Montclair Canvas Web Site</a> (new window/tab, from Instructure Web site)
+              </p>
+
+              <p>
+              <b>Regular Class Meetings</b>
+              <br/>Section 02:&nbsp;Tu 11:15AM&ndash;12:55PM SCI-102; &nbsp;Th 11:15AM&ndash;12:55PM UH-3046
+              <br/>Section 03:&nbsp;Tu 8:15PM&ndash;9:55PM RI-116; &nbsp;Th 8:15PM&ndash;9:55PM RI-116
+              </p>
+              <p>
+                <b>Office Hours</b> &nbsp; Tu 2:00PM&ndash;3:30PM RI-238; &nbsp;Th 6:30PM&ndash;8:00PM RI-238; &nbsp;or by appointment
+              </p>
+          
+            
+              <h3>Webassign, Course Text and other Resources</h3>
+
+
+              <p>
+                <em>Assigned Exercises</em> will be distributed, and your responses submitted, on the
+                <a href="http://www.webassign.net" target="_blank"><strong>Webassign</strong></a> Web site.
+                Therefore, you must enroll in the Course on the Webassign site and obtain Webassign access
+                to the Course Text. To enroll on Webassign, you must use the <em>class key</em>:
+                <strong>montclair 6107 1549</strong>.
+              </p>
+            <p> 
+                If you do not already have an account on Webassign, you must create one. On Webassign,
+                your user name should be your Montclair State NetID and your e-mail address should be your
+                Montclair State e-mail address.
+              </p>
+              <p>
+                To access the assignments on Webassign after the initial 13-day grace
+                period, you must either enter a personal access code
+                (included with a new textbook) or purchase access directly on the Webassign Web site.
+              </p>
+              <p>
+                The <em>course text</em> is <strong><em>Calculus: Early Transcendentals</em></strong>
+                (8th Edition) by J. Stewart.
+                This same book was the course text for Calculus II (MATH221) at Montclair State University
+                last semester (Spring, 2016). There are a number of paper and electronic variants of this text,
+                each with its own ISBN. If you purchased a used copy of the text, it probably did <em>not</em>
+                include an access code for Webassign. If you obtained a Webassign access code to this text
+                for a previous course (Calculus I and/or Calculus II), the same code can be used
+                for this course. Before making a purchase, I strongly encourage you to compare prices for the
+                text, including the cost of Webassign access.
+              </p>
+              <p>
+                At times, we will make use of <strong>plotting software</strong>.
+                I will assume that you have access to a hand-held graphing
+                calculator or similarly capable device, for both in-class activities and
+                exams. Calculator and graphing applications are available for
+                devices such as smart phones and tablets. While I have not used such "apps" myself,
+                I encourage you to try them and let me know how well they serve the demands of the course.
+              </p>
+              <p>
+                In accordance with Department Policy, during in-class exams you may only use calcualtors
+                that do <em>not</em> have computer-algebra capability. 
+              </p>
+              
+            <h3>Class</h3>
+
+              <p>
+                Class attendance is an integral part of the course. In my experience,
+                students who do not attend class regularly have difficulty on exams.
+                While attendance and participation in class are not, in
+                themselves, sufficient to learn the material, they play an important
+                role in the learning process. 
+              </p> 
+              <p>
+                The class periods are times for focus on the course material. Therefore,
+                in class, you should refrain from making/accepting calls and text
+                messages, as well as unrelated use of computers/hand-held devices.
+                Such activities also distract others who are focused on the class.
+              </p>
+              <p>
+                You are responsible for all in-class announcements of assignments,
+                schedule changes and other Course adjustments. Moreover, you should
+                check your Montclair State e-mail regularly for updates and announcements.
+              </p>
+
+
+            <h3>Academic Honesty</h3>
+
+            <p>
+              I presume and expect that each student will maintain a high level of
+              academic honesty and integrity in this course (and throughout his
+              or her academic career).
+            </p>
+            <p> 
+              For all in-class exams, you will be informed of the authorized
+              references and resources. Moreover, unless otherwise directed,
+              you may not receive assistance from, or collaborate with, others
+              in completing an exam. The use of unauthorized resources or
+              unauthorized collaboration constitutes a serious breach
+              of academic honesty.
+              Sanctions for academic dishonesty include a failing grade for the
+              course and notification of the Dean of the College.  
+            </p>  
+            <p>
+              Collaboration with others in completion of the assigned exercises, and
+              in preparation for exams, is highly encouraged and does not constitute
+              academic dishonesty. Nevertheless, all work submitted in completion of
+              assigned exercises should reflect your own understanding of the relevant
+              material.
+            </p>
+          </div>
+        </div> 
+      </div>
+        
+      <div class="tab">
+          <input type="radio" id="tab-2" name="tab-group-1">
+          <label for="tab-2">Topics</label>
+          
+          <div class="content">
+            <div>
+              <h2>Topics &ndash; More Calculus?!?</h2>
+              <h3>Questions (from Calculus I and II)</h3>
+              <ol>
+                <li>What is Calculus?</li>
+                <li>What Calculus do you already know? How does it 'fit' together?</li> 
+                <li>How does Calculus relate to/connect with/describe the external world? (geometry?)</li>
+                <li>What mathematices describes geometry in three dimensions?
+                  <br/> (Hint: non-Calculus mathematics in Calculus II)</li>
+              </ol>
+
+              <h3>Topics for Calculus III</h3>
+              <ol>
+                <li>Calculus of Curves in Space</li>
+                <li>Derivative(s) of a Function of Several Variables</li>
+                <li>Multiple Integrals</li>
+                <li>Integrals of Vector Fields</li>
+                <li>Derivatives of Vector Fields</li>
+                <li>Fundamental Theorem of Calculus for Vector Fields</li>
+              </ol>
+            </div>
+          </div> 
+      </div>
+        
+        <div class="tab">
+          <input type="radio" id="tab-3" name="tab-group-1">
+          <label for="tab-3">Tab Three</label>
+        
+          <div class="content">
+              <p>Stuff for Tab Three</p>
+              
+              <img src="http://placedog.com/200/100">
+          </div> 
+      </div>
+        
+    </div>
+  </body>
+</html>
